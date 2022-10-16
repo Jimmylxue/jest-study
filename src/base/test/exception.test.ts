@@ -7,7 +7,7 @@ function compilerAndroidCode() {
 	throw new Error('now environment is not client APP')
 }
 
-test('compiling android goes as expected', () => {
+test('compiling android goes as expected~~', () => {
 	expect(() => compilerAndroidCode()).toThrow()
 	expect(() => compilerAndroidCode()).toThrow(Error) //  is Error Type
 
