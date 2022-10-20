@@ -51,3 +51,12 @@ test('promise .rejects', async () => {
 	 */
 	await expect(getUserInfo(0)).rejects.toEqual({ message: 'error' })
 })
+
+test('.resolves without async/await', () => {
+	/**
+	 * we can use .resolves without async/await
+	 * 	but must be return it!
+	 */
+
+	return expect(getUserInfo(1)).resolves.toEqual({ username: 'jimmyxuexue' })
+})

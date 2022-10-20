@@ -8,7 +8,8 @@
 		"dev": "nodemon --watch 'src/**/*.ts' --exec jest",
 		"build": "tsc",
 		"test-c": "jest --coverage",
-		"test": "jest"
+		"test": "jest",
+		"test-w": "jest --watch"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.19.3",
