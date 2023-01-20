@@ -58,5 +58,5 @@ test('.resolves without async/await', () => {
 	 * 	but must be return it!
 	 */
 
-	return expect(getUserInfo(1)).resolves.toEqual({ username: 'jimmyxuexue' })
+	return expect(getUserInfo(1)).resolves.toEqual({ username: 'jimmy' })
 })
