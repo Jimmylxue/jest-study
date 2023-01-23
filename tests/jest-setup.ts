@@ -19,3 +19,12 @@ import 'jest-location-mock' // mock website url api, like window.location.href.
 beforeAll(() => {
 	// console.log('before all!!!!!')
 })
+
+/**
+ * we often write some debug message in test unit, it will has so many debug console when we start doing test,
+ * 	so we can use jest.spyOn(console, 'log').mockReturnValue() to mock some return message to hack it
+ */
+jest.spyOn(console, 'log').mockReturnValue()
+jest.spyOn(console, 'info').mockReturnValue()
+jest.spyOn(console, 'warn').mockReturnValue()
+jest.spyOn(console, 'error').mockReturnValue()
